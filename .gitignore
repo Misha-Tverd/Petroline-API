@@ -1,0 +1,19 @@
+# virtual env
+.venv/
+
+# cache
+__pycache__/
+*.pyc
+
+# env
+.env
+
+# logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
