@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "id": 123,
+    "missing_fields": [
+      "driver"
+    ],
+    "raw": {
+      "id": 123,
+      "date": "2026-04-14T11:12:12.942Z",
+      "personName": "",
+      "transportName": "John Deere 6195M AA1234BB",
+      "fuelName": "ДП",
+      "valueLitr": 125.4,
+      "value": 5000,
+      "azsName": "АЗС-1"
+    }
+  },
+  {
+    "id": 123,
+    "missing_fields": [
+      "driver"
+    ],
+    "raw": {
+      "id": 123,
+      "date": "2026-04-14T11:12:12.942Z",
+      "personName": "",
+      "transportName": "John Deere 6195M AA1234BB",
+      "fuelName": "ДП",
+      "valueLitr": 125.4,
+      "value": 5000,
+      "azsName": "АЗС-1"
+    }
+  }
+]

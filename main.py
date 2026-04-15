@@ -1,5 +1,6 @@
 from mapper import map_transaction_to_word_tags
-
+from validators import validate_required_fields
+from storage import append_missing_record
 
 sample_transaction = {
     "id": 123,
@@ -12,6 +13,20 @@ sample_transaction = {
     "azsName": "АЗС-1"
 }
 
-
 result = map_transaction_to_word_tags(sample_transaction)
-print(result)
+
+
+
+
+is_valid, missing = validate_required_fields(result)
+
+if not is_valid:
+    append_missing_record(
+        record_id=sample_transaction.get("id"),
+        missing_fields=missing,
+        raw_data=sample_transaction
+    )
+    print("Запис зберено в лог")
+else:
+    print("Все ок, можна створювати Word")
+
